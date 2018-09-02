@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-6.0.json",
+  "comments": "grpc packages",
+  "run": [
+    {
+      "tool": "require-vcpkg",
+      "comments": "Installs vcpkg."
+    },
+    {
+      "tool": "vcpkg-install",
+      "input": "spdlog flatbuffers grpc openssl",
+      "comments": "Installs required packages using vcpkg."
+    }
+  ]
+}
